@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@grpc/grpc-js": "^1.8.14",
+    "kafkajs": "^2.2.4"
+  }
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message User {
+  int32 id = 1;
+  string username = 2;
+}
+
+message Message {
+  int32 id = 1;
+  sint32 to = 2;
+  string text = 3;
+  bool read = 4;
+  int32 from = 5;
+  User User = 6;
+}
+
+message Empty {}
+
+service MessageService {
+  rpc Notify(Message) returns (Empty) {};
+}
